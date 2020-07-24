@@ -69,26 +69,17 @@ var buildContents = function(links) {
   return contents;
 };
 
-
-
-
   var section = document.getElementsByClassName('flex-shrink-0 col-12 col-md-3');
   var toc = document.createElement("div");
   toc.className = "toc toc__row";
-
-  console.log("DO something");
-  console.log("DO something");
   console.log(section);
   var links;
 
   if(typeof(section[0]) != 'undefined' && section[0] != null){
     section[0].appendChild(toc);
     links = getLinks();
-    console.log("BROJ LINKOVA")
-    console.log(links);
-    console.log(section);
   }
 
-  if(typeof(links) != 'undefined' && links != null && links.length !== 0){
+  if(typeof links !== 'undefined' && links.length !== 0 &&  typeof document.getElementsByClassName("toc")[0] !== 'undefined'){
     document.getElementsByClassName("toc")[0].innerHTML = "<div class='Box-header toc__header'><h2 class='Box-title toc_title'>Table Of Contents</h2></div>" + buildContents(links)
   }
