@@ -8,5 +8,5 @@ Shows a TOC (Table Of Contents) on the right sidebar generated from the README f
 -  Tooltip on hover for truncated text
 -  Well-suited with GitHub Dark Theme extension
 
-##License
+## License
 Licensed under the [MIT License](LICENSE).
