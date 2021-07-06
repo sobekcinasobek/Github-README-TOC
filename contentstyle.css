@@ -65,3 +65,8 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+
+.rgh-sticky-sidebar{
+  position: relative !important;
+}
